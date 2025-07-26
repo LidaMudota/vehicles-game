@@ -1,7 +1,6 @@
 <?php
-require_once __DIR__ . '/../interfaces/VehicleInterface.php';
-
-function runVehicle(VehicleInterface $vehicle) {
+require_once __DIR__ . '/../abstract/Vehicle.php';
+function runVehicle(Vehicle $vehicle) {
     $vehicle->moveForward();
     echo PHP_EOL;
 
