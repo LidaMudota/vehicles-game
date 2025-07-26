@@ -3,6 +3,11 @@ require_once __DIR__ . '/../abstract/Vehicle.php';
 require_once __DIR__ . '/../interfaces/VehicleInterface.php';
 
 class Car extends Vehicle implements VehicleInterface {
+    public function __construct()
+    {
+        $this->setInterior('кожаный салон');
+    }
+
     public function moveForward() {
         echo "Машина едет вперёд" . PHP_EOL;
     }

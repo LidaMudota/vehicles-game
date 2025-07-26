@@ -3,6 +3,11 @@ require_once __DIR__ . '/../abstract/Vehicle.php';
 require_once __DIR__ . '/../interfaces/VehicleInterface.php';
 
 class Bulldozer extends Vehicle implements VehicleInterface {
+    public function __construct()
+    {
+        $this->setInterior('металлическая кабина');
+    }
+
     public function moveForward() {
         echo "Бульдозер едет вперёд" . PHP_EOL;
     }

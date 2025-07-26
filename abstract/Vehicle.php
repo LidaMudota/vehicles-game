@@ -1,12 +1,19 @@
 <?php
 abstract class Vehicle {
-    public function honk() {
-        echo "Сигнал!" . PHP_EOL;
+    protected string $interior = 'Простой интерьер';
+
+    public function setInterior(string $interior): void {
+        $this->interior = $interior;
     }
-    public function wipersOn() {
-        echo "Дворники включены" . PHP_EOL;
+
+    public function honk(): void {
+    echo "Сигнал!" . PHP_EOL;
     }
-    public function showInterior() {
-        echo "Простой интерьер" . PHP_EOL;
+
+    public function wipersOn(): void {
+    echo "Дворники включены" . PHP_EOL;
+    }
+    public function showInterior(): void {
+        echo 'Интерьер: ' . $this->interior . PHP_EOL;
     }
 }
