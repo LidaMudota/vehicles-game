@@ -9,14 +9,14 @@ class Car extends Vehicle implements VehicleInterface {
     }
 
     public function moveForward() {
-        echo "Машина едет вперёд" . PHP_EOL;
+        echo "- Едет вперёд<br>";
     }
 
     public function moveBackward() {
-        echo "Машина едет назад" . PHP_EOL;
+        echo "- Едет назад<br>";
     }
 
     public function useAbility() {
-        echo "Включена закись азота" . PHP_EOL;
+        echo "- Включена закись азота<br>";
     }
 }

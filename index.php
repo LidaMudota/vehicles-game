@@ -8,6 +8,6 @@ $car = new Car();
 $bulldozer = new Bulldozer();
 $tank = new Tank();
 
-runVehicle($car);
-runVehicle($bulldozer);
-runVehicle($tank);
+runVehicle($car, 'Машина');
+runVehicle($bulldozer, 'Бульдозер');
+runVehicle($tank, 'Танк');

@@ -1,11 +1,10 @@
 <?php
 require_once __DIR__ . '/../abstract/Vehicle.php';
-function runVehicle(Vehicle $vehicle) {
-    $vehicle->moveForward();
-    echo PHP_EOL;
 
+function runVehicle(Vehicle $vehicle, string $name): void {
+    echo "<strong>{$name}</strong><br>";
+    $vehicle->moveForward();
     $vehicle->useAbility();
-    echo PHP_EOL;
 
     if (method_exists($vehicle, 'honk')) {
         $vehicle->honk();
@@ -19,5 +18,5 @@ function runVehicle(Vehicle $vehicle) {
         $vehicle->showInterior();
     }
 
-    echo PHP_EOL;
+    echo "<br>";
 }

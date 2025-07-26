@@ -9,14 +9,14 @@ class Bulldozer extends Vehicle implements VehicleInterface {
     }
 
     public function moveForward() {
-        echo "Бульдозер едет вперёд" . PHP_EOL;
+        echo "- Едет вперёд<br>";
     }
 
     public function moveBackward() {
-        echo "Бульдозер едет назад" . PHP_EOL;
+        echo "- Едет назад<br>";
     }
 
     public function useAbility() {
-        echo "Ковш поднят" . PHP_EOL;
+        echo "- Ковш поднят<br>";
     }
 }

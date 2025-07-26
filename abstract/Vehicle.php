@@ -9,15 +9,15 @@ abstract class Vehicle implements VehicleInterface {
     }
 
     public function honk(): void {
-        echo 'Сигнал!' . PHP_EOL;
+        echo '- Сигнал!<br>';
     }
 
     public function wipersOn(): void {
-        echo 'Дворники включены' . PHP_EOL;
+        echo '- Дворники включены<br>';
     }
 
     public function showInterior(): void {
-        echo 'Интерьер: ' . $this->interior . PHP_EOL;
+        echo '- Интерьер: ' . $this->interior . '<br>';
     }
 
     abstract public function moveForward();

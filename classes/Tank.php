@@ -5,18 +5,18 @@ require_once __DIR__ . '/../interfaces/VehicleInterface.php';
 class Tank extends Vehicle implements VehicleInterface {
     public function __construct()
     {
-        $this->setInterior('бронированный интерьер');
+        $this->setInterior('бронированный');
     }
 
     public function moveForward() {
-        echo "Танк движется вперёд" . PHP_EOL;
+        echo "- Движется вперёд<br>";
     }
 
     public function moveBackward() {
-        echo "Танк движется назад" . PHP_EOL;
+        echo "- Движется назад<br>";
     }
 
     public function useAbility() {
-        echo "Орудие заряжено" . PHP_EOL;
+        echo "- Орудие заряжено<br>";
     }
 }
